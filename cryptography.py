@@ -45,20 +45,38 @@ elif a == "e" or "d":
 
     crypt1 = zip(key,message)
     crypt = []
-    for c in crypt1:
-        crypt.append(c[0]+c[1])
+    
+    if a == "e":
+        for c in crypt1:
+            crypt.append(c[0]+c[1])
 
-    print(crypt)
+        print(crypt)
     
-    final = []
-    for c in crypt:
-        C = associations[c]
-        final.append(C)
+        final = []
+        for c in crypt:
+            C = associations[c]
+            final.append(C)
     
-    print(final)
+        print(final)
     
-    for n in final:
-        print(n)
+        for n in final:
+            print(n,end="")
+            
+    if a == "d":
+        for c in crypt1:
+            crypt.append(c[0]-c[1])
+
+        print(crypt)
+    
+        final = []
+        for c in crypt:
+            C = associations[c]
+            final.append(C)
+    
+        print(final)
+    
+        for n in final:
+            print(n,end="")
 
 
 
