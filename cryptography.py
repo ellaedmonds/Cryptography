@@ -33,15 +33,15 @@ elif a == "e" or "d":
         e = associations.find(n)
         key1.append(e)
     
-    print(message)
-    print(key1)
+    #print(message)
+    #print(key1)
 
     M = len(message)
     K = len(key1)
 
     key = key1*(M/K)
 
-    print(key)
+    #print(key)
 
     crypt1 = zip(key,message)
     crypt = []
@@ -50,30 +50,30 @@ elif a == "e" or "d":
         for c in crypt1:
             crypt.append(c[0]+c[1])
 
-        print(crypt)
+        #print(crypt)
     
         final = []
         for c in crypt:
             C = associations[c]
             final.append(C)
     
-        print(final)
+        #print(final)
     
         for n in final:
             print(n,end="")
             
     if a == "d":
         for c in crypt1:
-            crypt.append(c[0]-c[1])
+            crypt.append(c[1]-c[0])
 
-        print(crypt)
+        #print(crypt)
     
         final = []
         for c in crypt:
             C = associations[c]
             final.append(C)
     
-        print(final)
+        #print(final)
     
         for n in final:
             print(n,end="")
