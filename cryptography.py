@@ -59,6 +59,8 @@ while a != "q":
         
             for n in final:
                 print(n,end="")
+            
+            print()
                 
         if a == "d":
             for c in crypt1:
@@ -75,6 +77,9 @@ while a != "q":
         
             for n in final:
                 print(n,end="")
+                
+            print()
+                
     a = input('Enter e to encrypt, d to decrypt, or q to quit: ')
 
 if a == "q":
