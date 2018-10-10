@@ -37,7 +37,7 @@ while a != "q":
         M = len(message)
         K = len(key1)
     
-        key = key1*(M/K)
+        key = key1*int((M/K))
         
         extra1 = M%K
         
