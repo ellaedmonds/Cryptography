@@ -59,7 +59,7 @@ while a != "q":
         
             final = []
             for c in crypt:
-                C = associations[c]
+                C = associations[c%85]
                 final.append(C)
         
             #print(final)
@@ -77,7 +77,7 @@ while a != "q":
         
             final = []
             for c in crypt:
-                C = associations[c]
+                C = associations[c%85]
                 final.append(C)
         
             #print(final)
