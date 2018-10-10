@@ -31,7 +31,7 @@ while a != "q":
             e = associations.find(n)
             key1.append(e)
         
-        print(message)
+        #print(message)
         #print(key1)
     
         M = len(message)
@@ -46,7 +46,7 @@ while a != "q":
             for c in extra:
                 key.append(key1[c])
     
-        print(key)
+        #print(key)
 
         crypt1 = zip(key,message)
         crypt = []
