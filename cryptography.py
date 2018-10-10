@@ -38,6 +38,10 @@ while a != "q":
         K = len(key1)
     
         key = key1*(M/K)
+        
+        extra = M%K
+        
+        key.append(key1[0:extra])
     
         #print(key)
     
