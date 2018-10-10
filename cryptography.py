@@ -31,7 +31,7 @@ while a != "q":
             e = associations.find(n)
             key1.append(e)
         
-        #print(message)
+        print(message)
         #print(key1)
     
         M = len(message)
