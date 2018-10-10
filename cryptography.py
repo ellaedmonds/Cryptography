@@ -39,12 +39,15 @@ while a != "q":
     
         key = key1*(M/K)
         
-        extra = M%K
+        extra1 = M%K
         
-        key.append(key1[0:extra])
+        if extra1 != 0:
+            extra = range(extra1)
+            for c in extra:
+                key.append(key1[c])
     
-        #print(key)
-    
+        print(key)
+
         crypt1 = zip(key,message)
         crypt = []
         
